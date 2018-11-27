@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Instagram</title>
-    <meta name="description" content="Бесплатный интенсив по верстке" />
+    <meta name="description" content="Training" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <script>
+        function hidePlaceHolder() {
+            document.getElementById('search-placeholder').style.display ='none';
+            document.getElementById('search-input').style.display ='block';
+        }
+    </script>
     <nav>
         <div class="container">
-                <div class="logo">
-                        <img src="icons/icon-logo.png" alt="Image not found">
-                        <span class="line"></span>
-                        <img src="icons/text-logo.png" alt="Image not found">
+            <div class="logo">
+                <img src="icons/icon-logo.png" alt="Image not found">
+                <span class="line"></span>
+                <img src="icons/text-logo.png" alt="Image not found">
+            </div>
+            <div class="search">
+                <div class="search-input">
+                    <div id="search-placeholder" onclick="hidePlaceHolder()" class="search-placeholder">
+                        <img src="icons/search-icon.png" alt="Image not found">
+                        <span>Search</span>
                     </div>
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <img src="icons/location.png" alt="Image not found">
-                            </li>
-                            <li>
-                                <img src="icons/like-icon.png" alt="Image not found">
-                            </li>
-                            <li>
-                                <img src="icons/profile.png" alt="Image not found">
-                            </li>
-                        </ul>
-                    </div>
+                    <input id="search-input" type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <img src="icons/location.png" alt="Image not found">
+                    </li>
+                    <li>
+                        <img src="icons/like-icon.png" alt="Image not found">
+                    </li>
+                    <li>
+                        <img src="icons/profile.png" alt="Image not found">
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="user-info">
         <div class="container">
-                <div class="avatar">
-                    <div class="avatar-background">
-                        <img src="images/avatar.jpg">
-                    </div>
+            <div class="avatar">
+                <div class="avatar-background">
+                    <img src="images/avatar_my.png">
+                    <svg viewBox="0 0 228 228">
+                        <circle r="105" cx="114" cy="114"></circle>
+                    </svg>
                 </div>
-                <div class="description">
+            </div>
+            <div class="description">
                         <div class="user">
-                            <span class="login">Jordan</span>
+                            <span class="login">Ievgen</span>
                             <button class="button button-blue button-follow">Follow</button>
                             <a class="button button-blue button-menu" href="#">
                                 <img src="icons/icon.png" alt="Image not found">
@@ -68,9 +85,9 @@
                             </ul>
                         </div>
                         <div class="about">
-                            <span>Jordan A.</span><p>Graphic designer and photographer</p><a href="https://github.com/SeverynIevgen/develop">github.com/SeverynIevgen/develop</a>
+                            <span>Ievgen S.</span><p>Web-development intern</p><a href="https://github.com/SeverynIevgen/develop">https://github.com/SeverynIevgen/develop</a>
                         </div>
-                </div>    
+            </div>    
         </div>       
     </div>
     <div class="story">
@@ -78,44 +95,44 @@
             <ul>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_1.jpg" alt="Image not found"></div>
-                        <span>Landscape</span>
+                        <div class="image-container"><img src="images/seryoga.jpg" alt="Image not found"></div>
+                        <span>Seryoga</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_2.jpg" alt="Image not found"></div>
-                        <span>Cali</span>
+                        <div class="image-container"><img src="images/pine-tree.jpg" alt="Image not found"></div>
+                        <span>Pine-tree</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_3.jpg" alt="Image not found"></div>
-                        <span>City</span>
+                        <div class="image-container"><img src="images/moscow_region_cake.jpg" alt="Image not found"></div>
+                        <span>Cake</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_4.jpg" alt="Image not found"></div>
-                        <span>Plants</span>
+                        <div class="image-container"><img src="images/basketball.jpg" alt="Image not found"></div>
+                        <span>Basketball</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_5.jpg" alt="Image not found"></div>
-                        <span>Portraits</span>
+                        <div class="image-container"><img src="images/hockey.jpg" alt="Image not found"></div>
+                        <span>Hockey</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_6.jpg" alt="Image not found"></div>
-                        <span>NYC</span>
+                        <div class="image-container"><img src="images/portrait.jpg" alt="Image not found"></div>
+                        <span>Portrait</span>
                     </a>    
                 </li>
                 <li>
                     <a href="#">
-                        <div class="image-container"><img src="images/story_7.jpg" alt="Image not found"></div>
-                        <span>Chicago</span>
+                        <div class="image-container"><img src="images/nature.jpg" alt="Image not found"></div>
+                        <span>Nature</span>
                     </a>    
                 </li>
             </ul>
@@ -133,89 +150,90 @@
                             </li>
                             <li>
                                 <img src="icons/comment-icon.png" alt="Image not found">
-                                <span>4,938</span>
+                                <span>3,123</span>
                             </li>
                         </ul>
                     </a>
-                    <img src="images/photo_1.jpg" alt="Image not found">
+                    <img src="images/snow.jpg" alt="Image not found">
                 </li>
                 <li>
                     <a class="cover" href="#">
                         <ul>
                             <li>
                                 <img src="icons/heart-icon.png" alt="Image not found">
-                                <span>4,938</span>
+                                <span>4,856</span>
                             </li>
                             <li>
                                 <img src="icons/comment-icon.png" alt="Image not found">
-                                <span>4,938</span>
+                                <span>5,288</span>
                             </li>
                         </ul>
                     </a>
-                    <img src="images/photo_2.jpg" alt="Image not found">
+                    <img src="images/fish.jpg" alt="Image not found">
                 </li>
                 <li>
                     <a class="cover" href="#">
                         <ul>
                             <li>
                                 <img src="icons/heart-icon.png" alt="Image not found">
-                                <span>4,938</span>
+                                <span>1,357</span>
                             </li>
                             <li>
                                 <img src="icons/comment-icon.png" alt="Image not found">
-                                <span>4,938</span>
+                                <span>2,648</span>
                             </li>
                         </ul>
                     </a>
-                    <img src="images/photo_3.jpg" alt="Image not found">
+                    <img src="images/steppe.jpg" alt="Image not found">
                 </li>
                 <li>
                         <a class="cover" href="#">
                             <ul>
                                 <li>
                                     <img src="icons/heart-icon.png" alt="Image not found">
-                                    <span>4,938</span>
+                                    <span>932</span>
                                 </li>
                                 <li>
                                     <img src="icons/comment-icon.png" alt="Image not found">
-                                    <span>4,938</span>
+                                    <span>2,356</span>
                                 </li>
                             </ul>
                         </a>
-                        <img src="images/photo_1.jpg" alt="Image not found">
+                        <img src="images/cinema.jpg" alt="Image not found">
                     </li>
                     <li>
                         <a class="cover" href="#">
                             <ul>
                                 <li>
                                     <img src="icons/heart-icon.png" alt="Image not found">
-                                    <span>4,938</span>
+                                    <span>3,985</span>
                                 </li>
                                 <li>
                                     <img src="icons/comment-icon.png" alt="Image not found">
-                                    <span>4,938</span>
+                                    <span>4,555</span>
                                 </li>
                             </ul>
                         </a>
-                        <img src="images/photo_2.jpg" alt="Image not found">
+                        <img src="images/holiday.jpg" alt="Image not found">
                     </li>
                     <li>
                         <a class="cover" href="#">
                             <ul>
                                 <li>
                                     <img src="icons/heart-icon.png" alt="Image not found">
-                                    <span>4,938</span>
+                                    <span>7,458</span>
                                 </li>
                                 <li>
                                     <img src="icons/comment-icon.png" alt="Image not found">
-                                    <span>4,938</span>
+                                    <span>6,459</span>
                                 </li>
                             </ul>
                         </a>
-                        <img src="images/photo_3.jpg" alt="Image not found">
+                        <img src="images/gym.jpg" alt="Image not found">
                     </li>
             </ul>
         </div>
     </div>
 </body>
+
 </html>
