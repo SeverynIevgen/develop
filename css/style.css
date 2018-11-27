@@ -1,0 +1,358 @@
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+a {
+    color: #043667;
+}
+
+.container {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+.button {
+    height: 41px;
+    border-radius: 4.5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 37px;
+    box-sizing: border-box;
+}
+
+.button.button-blue {
+    color: #ffffff;
+    background-color: #3e99ed;
+}
+
+button.button-empty {
+    padding: 10px;
+}
+
+a.button {
+    text-decoration: none;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #00000019;
+    padding: 30px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo .line {
+    width: 1px;
+    height: 46px;
+    background-color: #262626;
+    margin: 0 30px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .search .search-input {
+    width: 308px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1.5px #d6d6d6;
+    font-size: 22px;
+    color: #a7a7a7;
+    background-color: #fafafa;
+}
+
+nav .search .search-input .search-placeholder {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .search .search-input .search-placeholder img {
+    margin-right: 5px;
+}
+
+/* #search-placeholder {
+    display: none;
+} */
+
+nav .search input {
+    display: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #fafafa url(../icons/search-icon.png) no-repeat 15px;
+    padding-left: 40px;
+}
+
+nav .links ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;     
+}
+
+nav .links ul li {
+    list-style: none;
+    margin-left: 45px;
+}
+
+nav .links ul li:first-of-type {
+    margin-left: 0;
+}
+
+.user-info {
+    margin: 70px auto 60px;
+}
+.user-info .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info .avatar {
+    width: 422px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info .avatar .avatar-background {
+    width: 228px;
+    height: 228px;
+    position: relative;
+}
+
+.user-info .avatar .avatar-background img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: 200px;
+}
+
+.user-info .avatar .avatar-background svg {
+    fill: transparent;
+    stroke: #8a3ab9;
+    stroke-linecap: round;
+    stroke-width: 4;
+    stroke-dasharray: 1;
+    animation: stroke-draw 6s ease-out infinite alternate;
+}
+
+@keyframes stroke-draw {
+    from {
+        stroke: #8a3ab9;
+        stroke-dasharray: 1;
+    }
+    to {
+        stroke: #cd486b;
+        stroke-dasharray: 8;
+        transform: rotate(180deg);
+    }
+}
+
+/* .user-info .avatar .avatar-background {
+    width: 242px;
+    height: 242px;
+    background-image: linear-gradient(239deg, #d7337d, #d93173 31%, #f79955 58%, #f5a17c);
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info .avatar img {
+    border: solid 9px #fff;
+    border-radius: 100%;
+
+    width: 216px;
+    height: 216px;
+    object-fit: contain;
+} */
+
+.user-info .description {
+    width: 896px;
+}
+
+.user-info .description .user {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .description .counter ul {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.user-info .description .counter ul li {
+    list-style: none;
+    font-size: 23px;
+    margin-right: 60px;
+}
+
+.user-info .description .counter ul li :last-of-type {
+    margin-right: 0;
+}
+
+.user-info .description .counter ul li span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.user-info .description .about {
+    font-size: 23px;
+}
+
+.user-info .description .about span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.user-info .description .about p {
+    margin: 0;
+    display: inline-block;
+}
+
+.user-info .description .about a {
+    display: block;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.user-info .description .user .login {
+    font-size: 49px;
+    margin-right: 35px;
+    font-weight: 100;
+}
+.user-info .description .user .button-follow {
+    margin-right: 10px;
+}
+
+.user-info .description .user a.button.button-blue {
+    margin-right: 10px;
+    padding: 10px 15px;
+    width: 49px;
+}
+
+.story .container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.story a {
+    text-decoration: none;
+}
+
+.story ul li {
+    text-align: center;
+}
+
+.story ul li span {
+    font-size: 23px;
+    font-weight: bold;
+    color: #000000;  
+}
+
+.story ul li .image-container {
+    width: 121px;
+    height: 121px;
+    border: solid 1.5px #eaeaea;
+    background-color: #eaeaea;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 19px;
+}
+
+.story .container ul img {
+    border-radius: 100%;
+    width: 113.2px;
+    height: 113.2px;
+    object-fit: contain;
+    border: 3px solid #ffffff;
+}
+
+.photo-list .container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 93px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.photo-list ul li {
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;    
+}
+
+.photo-list ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.photo-list ul li .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: none;
+    padding: 0 80px; 
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.photo-list ul li .cover ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.photo-list ul li .cover li {
+    align-items: center;
+    margin-right: 45px;
+}
+
+.photo-list ul li .cover li img {
+    margin-right: 10px;
+}
+
+.photo-list ul li .cover li:last-of-type {
+    margin-right: 0;
+}
+
+.photo-list ul li:hover .cover {
+    display: flex;
+}
